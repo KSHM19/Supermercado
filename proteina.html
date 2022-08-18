@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proteina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-image: url("https://media.istockphoto.com/photos/refrigerator-shelves-in-the-supermarket-blurred-background-picture-id873543534?k=20&m=873543534&s=612x612&w=0&h=Yoj5qqYfQ0rvcXkNlmP1h9VPesK49CImhsFDlEhSTd8=");
+            background-position: contain;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .cards-container ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 87vw;
+
+        }
+
+        .cards-container li {
+            margin: 20px;
+            width: 340px;
+        }
+
+        .cards-container a {
+            text-decoration: none;
+            color: red;
+        }
+
+
+
+        .title {
+            font-size: grid;
+            margin-bottom: 12px;
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+
+        .subtitle {
+            color: var(--black);
+            font-size: var(--lg);
+            font-weight: 700;
+            margin-bottom: 32px;
+            text-align: center;
+
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 380px);
+            gap: 56px;
+            place-content: center;
+            color: var(--black);
+        }
+
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+            transform: translate(150px, -70px);
+            cursor: pointer;
+            margin-bottom: 0px;
+        }
+
+        .product-card img {
+            width: 340px;
+            height: 340px;
+            border-radius: 20px;
+            object-fit: cover;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 1px solid red;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+
+        .navbar-left {
+            display: flex;
+
+        }
+
+        .navbar-left ul {
+            margin-left: 12px;
+        }
+
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+            text-decoration: none;
+            color: var(--black);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+            border: 1px solid red;
+            color: gold;
+
+        }
+
+        .navbar-email {
+            color: gold;
+            font-size: var(--sm);
+            margin-right: 12px;
+        }
+
+        .navbar-shopping-cart {
+            position: relative;
+        }
+
+        .navbar-shopping-cart div {
+            width: 16px;
+            height: 16px;
+            background-color: red;
+            border-radius: 50px;
+            font-size: var(--sm);
+            font-weight: bold;
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        @media(max-width: 640px) {
+            .menu {
+                display: block;
+            }
+
+            .navbar-left ul {
+                display: none;
+            }
+
+            .navbar-email {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-left">
+            <img src="./images/3549578.jpg" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="proteina.html">Proteina</a>
+                </li>
+                <li>
+                    <a href="frutas.html">Frutas</a>
+                </li>
+                <li>
+                    <a href="verduras.html">Verduras</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">Stevanherran@gmail.com</li>
+                <li class="navbar-shopping-cart">
+                    <img src="./iconos/icon_shopping_cart.svg" alt="shopping cart">
+                    <div>6</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="title">¡Mi lista de Supermercado!</h1>
+    <section class="main-container">
+        <h5 class="subtitle">Proteina</h5>
+        <div class="cards-container">
+
+            <ul>
+                <li>
+
+                    <div class="product-card">
+                        <img src="./images/usman-yousaf-eOktYr3tAMo-unsplash (1).jpg" alt="carne de res">
+                        <div class="product-info">
+                            <div>
+                                <p>Es una fuente de vitamina B12; esta vitamina nos ayuda a metabolizar proteínas, a
+                                    formar glóbulos rojos y a darle mantenimiento al sistema nervioso central. Es rica
+                                    en zinc, que ayuda a protegernos contra el daño oxidativo, a la cicatrización de la
+                                    piel y para crear hemoglobina.</p>
+                                <p>$14.000</p>
+                                <p>
+                                    <a
+                                        href="https://www.google.com/search?q=recetas+con+carne&rlz=1C1ONGR_esCO1015CO1015&source=lnms&tbm=isch&s">Carnes</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/harris-vo-iwP2UhGvnJI-unsplash (1) (1).jpg" alt="pescado">
+                        <div class="product-info">
+                            <div>
+                                <p>El consumo de pescado es recomendado para toda la población, por ser una importante
+                                    fuente de proteínas, además nos aportan vitaminas, minerales y ácidos grasos
+                                    poliinsaturados, como el omega 3. Estos últimos son esenciales, porque el cuerpo no
+                                    los produce y es necesario consumirlos a través de la dieta</p>
+                                <p>$10.000</p>
+                                <p>
+                                    <a href="https://www.cocinacaserayfacil.net/recetas-de-pescado/">Pescado</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/jk-sloan-9zLa37VNL38-unsplash (1).jpg" alt="pollo">
+                        <div class="product-info">
+                            <div>
+                                <p>La carne de pollo es fuente importante de nutrientes como proteínas, lípidos,
+                                    Vitamina 3 y minerales como calcio, hierro, zinc, sodio, potasio y magnesio, entre
+                                    otros. De fácil digestión. La mayor parte de la grasa corporal del pollo se
+                                    encuentra en la piel, por lo que al retirarla se reduce el consumo de grasa</p>
+                                <p>$13.000</p>
+                                <p>
+                                    <a href="https://www.cocinacaserayfacil.net/recetas-con-pollo/">Pollo</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/jakub-kapusnak-Hj53USePB1E-unsplash (1).jpg" alt="huevos">
+                        <div class="product-info">
+                            <div>
+                                <p>Tienen proteínas de muy buena calidad y de alto valor biológico. También incluye
+                                    vitaminas de los grupos A y B. Por último, contiene minerales entre los que destaca
+                                    el hierro, cuyo origen animal permite una fácil absorción.</p>
+                                <p>$12.000</p>
+                                <p>
+                                    <a
+                                        href="https://www.recetasnestle.com.co/blog-del-sabor/recetas-caseras/desayunos-huevo">Huevos</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/pierre-bamin-oZ4Krez3X5o-unsplash.jpg" alt="quinoa">
+                        <div class="product-info">
+                            <div>
+                                <p> Tiene más proteína que cualquier cereal
+                                    ¿Estás tomando las proteínas necesarias? La quinoa tiene entre 12-16 gramos por cada
+                                    100. Además, estas proteínas vegetales se consideran de alto valor biológico, ya que
+                                    contienen todos los aminoácidos esenciales para el ser humano en las proporciones
+                                    adecuadas.</p>
+                                <p>$1.000</p>
+                                <p>
+                                    <a
+                                        href="https://co.naturesheart.com/vida-saludable/recetas-faciles-preparar-preparar-la-quinoa?gclid=EAIaIQobChMIu5au39Gw-QIVIeC1Ch10nQIuEAAYASAAEgIlEfD_BwE&gclsrc=aw.ds">Quinoa</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/aliona-gumeniuk-jeAjT87nbjM-unsplash.jpg" alt="queso">
+                        <div class="product-info">
+                            <div>
+                                <p>El calcio es el mineral más abundante en nuestro organismo, se encarga de la
+                                    formación de los huesos y dientes. La principal fuente de calcio es la leche y
+                                    derivados como el queso, por eso, consumir estos productos es esencial para para
+                                    prevenir enfermedades óseas como la osteoporosis y mantener una buena densidad en
+                                    los huesos.</p>
+                                <p>$3.000</p>
+                                <p>
+                                    <a href="https://www.cocinafacil.com.mx/recetas/recetas-con-queso/">Queso</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/goh-rhy-yan-hTd-y7MBrMg-unsplash.jpg" alt="Cañamo">
+                        <div class="product-info">
+                            <div>
+                                <p>Las semillas de cáñamo (cañamón) son extraordinariamente beneficiosas para la salud,
+                                    ya que contienen todos los aminoácidos y ácidos grasos esenciales necesarios para un
+                                    cuerpo lleno de vitalidad. Ninguna otra planta tiene proteínas de tan fácil
+                                    digestión ni una proporción tan perfecta entre los aceites esenciales</p>
+                                <p>$1.200</p>
+                                <p>
+                                    <a
+                                        href="https://www.cuerpomente.com/blogs/cocina-vegana-marta/recetas-semillas-canamo-menu-semanal-rico-omega-3_7535">Cañamo</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg" alt="avena">
+                        <div class="product-info">
+                            <div>
+                                <p>Te aporta, por ejemplo, muy buenas cantidades de magnesio, cobre, hierro, zinc y
+                                    vitamina B1, así como pequeñas dosis de calcio, ácido fólico y otras vitaminas del
+                                    grupo B. Además, es muy rica en manganeso. Y todo esto de forma muy condensada: en
+                                    poca cantidad y sin aportar demasiadas calorías: unas 110 calorías una ración de 30
+                                    gramos de copos de avena.</p>
+                                <p>$4.500</p>
+                                <p>
+                                    <a
+                                        href="https://www.micasarevista.com/recetas-trucos-cocina/g109972/8-recetas-originales-con-avena/">Avena</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+
+
+                </li>
+            </ul>
+    </section>
+
+
+</body>
+
+</html>

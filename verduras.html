@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verduras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-image: url("https://img.freepik.com/fotos-premium/pasillo-productos-congelados-supermercado_293060-10741.jpg?w=2000");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .cards-container ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 87vw;
+        }
+
+        .cards-container li {
+            margin: 20px;
+            width: 340px;
+        }
+
+        .cards-container a {
+            text-decoration: none;
+            color: red;
+        }
+
+
+
+        .title {
+            font-size: grid;
+            margin-bottom: 32px;
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+
+        .subtitle {
+            color: var(--black);
+            font-size: var(--lg);
+            font-weight: 700;
+            margin-bottom: 22px;
+            text-align: center;
+
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 380px);
+            gap: 56px;
+            place-content: center;
+            color: var(--black);
+        }
+
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+            transform: translate(150px, -70px);
+            position: absolute;
+            cursor: pointer;
+            margin-bottom: 0px;
+        }
+
+        .product-card img {
+            width: 340px;
+            height: 340px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0, 24px;
+            border-bottom: 2px solid red;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+
+        .navbar-left {
+            display: flex;
+
+        }
+
+        .navbar-left ul {
+            margin-left: 12px;
+        }
+
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+            text-decoration: none;
+            color: var(--black);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+            border: 1px solid red;
+            color: gold;
+
+        }
+
+        .navbar-email {
+            color: gold;
+            font-size: var(--sm);
+            margin-right: 12px;
+            position: left;
+        }
+
+        .navbar-shopping-cart {
+            position: relative;
+        }
+
+        .navbar-shopping-cart div {
+            width: 16px;
+            height: 16px;
+            background-color: red;
+            border-radius: 50px;
+            font-size: var(--sm);
+            font-weight: bold;
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+
+        <div class="navbar-left">
+            <img src="./images/3549578.jpg" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="/">Proteina</a>
+                </li>
+                <li>
+                    <a href="/">Frutas</a>
+                </li>
+                <li>
+                    <a href="/">Verduras</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">Stevanherran@gmail.com</li>
+                <li class="navbar-shopping-cart">
+                    <img src="./iconos/icon_shopping_cart.svg" alt="shopping cart">
+                    <div>6</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="title">¡Mi lista de Supermercado!</h1>
+    <h5 class="subtitle">Verduras</h5>
+    <div class="cards-container">
+        <ul>
+            <li>
+                <div class="product-card">
+                    <img src="./images/louis-hansel-Iu3oWcTi0a4-unsplash (1).jpg" alt="Zanahoria">
+                    <div class="product-info">
+                        <div>
+                            <p>La zanahoria es uno de los alimentos más saludables y que, afortunadamente se consume de
+                                forma habitual. Dos de sus propiedades más conocidas es el fortalecimiento de la piel y
+                                la mejora de la salud ocular. Pero, aparte, tiene otras ventajas que convierten a este
+                                vegetal en uno de los mejores desde un punto de vista nutricional.</p>
+                            <p>$2.500</p>
+                            <p>
+                                <a
+                                    href="https://www.google.com/search?q=recetas+con+zanahoria&tbm=isch&ved=2ahUKEwjP8ZWTnpz5AhWQZ98KHXTuBk4Q2-cCegQIABAA&oq=recetas+con+za&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECAAQQzoGCAAQHhAHOgYIABAeEAg6CAgAEIAEELEDOgsIABCABBCxAxCDAVCxB1iwLWCROWgEcAB4AIABYYgBtAqSAQIxNZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=ZNjiYs-vJpDP_Qb03JvwBA&bih=657&biw=1024&rlz=1C1ONGR_esCO1015CO1015">Zanahoria</a>
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="./Checkout.html"><img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                        </figure>
+                    </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <img src="./images/mayu-ken-CNZ-9s5p2i8-unsplash (1).jpg" alt="Cebolla">
+                    <div class="product-info">
+                        <div>
+                            <p>La cebolla contiene azúcar natural, vitaminas A, B6, C y E. También minerales como el
+                                sodio, potasio, hierro y fibra alimentaria. Además son un buena fuente de ácido fólico.
+                                100 gramos de cebolla contienen 44 calorías y 1,4 gramos de fibra</p>
+                            <p>$1.500</p>
+                            <p>
+                                <a
+                                    href="https://www.lagourmeta.com/blog/gourmet/con-que-comer-cebolla-confitada">Cebolla</a>
+                            </p>
+                        </div>
+
+                        <figure>
+                            <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                        </figure>
+                    </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <img src="./images/monika-grabkowska-i14VzlCp-Eo-unsplash.jpg" alt="Espinaca">
+                    <div class="product-info">
+                        <div>
+                            <p>La espinaca es una fuente excelente de vitaminas K, A, C y ácido fólico. También es rica
+                                en manganeso, magnesio, hierro y vitamina B2. La vitamina K es importante para la salud
+                                de los huesos y es difícil encontrar vegetales con más vitamina K que la espinaca.
+                                También son especialmente importantes para la salud visual</p>
+                            <p>$1.000</p>
+                            <p>
+                                <a href="https://www.cocinafacil.com.mx/recetas/recetas-de-espinacas/">Espinaca</a>
+                            </p>
+                        </div>
+
+                        <figure>
+                            <a href="./Checkout.html"><img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                        </figure>
+                    </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <img src="./images/keriliwi-Za9HGBK5ALA-unsplash (1).jpg" alt="Pepino">
+                    <div class="product-info">
+                        <div>
+                            <p>Al igual que la vitamina C, tiene acción antioxidante, y ésta última además interviene en
+                                la formación de colágeno, glóbulos rojos, huesos y dientes, favorece la absorción del
+                                hierro y aumenta la resistencia frente las infecciones</p>
+                            <p>$1.800</p>
+                            <p>
+                                <a href="https://cookpad.com/co/buscar/pepino%20de%20guiso">Pepino</a>
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""><a href=""></a>
+                        </figure>
+                    </div>
+            </li>
+            <li>
+
+                <div class="product-card">
+                    <img src="./images/monika-grabkowska-_sOjQAx0bzI-unsplash.jpg" alt="Lechuga">
+                    <div class="product-info">
+                        <div>
+                            <p>Sin embargo, es preciso tener en cuenta que las hojas de color verde intenso, que por lo
+                                general suelen ser las menos tiernas, son precisamente las más ricas en vitaminas y
+                                minerales. Contiene flavonoides, fundamentalmente quercetina; seguida de kaempferol, y
+                                cantidades inferiores de miricetina, luteolina y apigenina.La lechuga también aporta
+                                pequeñas cantidades de b-sitosterol, stigmasterol y campesterol, fitoesteroles que
+                                participan en importantes funciones biológicas del organismo.</p>
+                            <p>$4.000</p>
+                            <p>
+                                <a
+                                    href="https://www.kiwilimon.com/tips/tips-de-cocina/tips-de-platillos/10-recetas-saludables-con-lechuga-que-no-son-ensaladas">Lechuga</a>
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                        </figure>
+                    </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <img src="./images/rodrigo-dos-reis-aIghKsc3H34-unsplash.jpg" alt="Tomate">
+                    <div class="product-info">
+                        <div>
+                            <p>El tomate es considerado una fruta a pesar de que normalmente es utilizado como un
+                                vegetal en las ensaladas y en las preparaciones de algunos platos culinarios. Su nombre
+                                científico es Lycopersicum esculentum L y es una fruta rica en vitamina C, A, K, potasio
+                                y licopeno, un potente antioxidante.</p>
+                            <p>$2.000</p>
+                            <p>
+                                <a href="https://www.recetin.com/10-recetas-originales-con-tomate.html">Tomate</a>
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                        </figure>
+                    </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <img src="./images/mitchell-luo-9IXboIzoU4w-unsplash.jpg" alt="Jengibre">
+                    <div class="product-info">
+                        <div>
+                            <p>También se utiliza para los vértigos, náuseas y mareos de viaje, trastornos circulatorios
+                                y del riego sanguíneo, dolores y espasmos musculares, así como para los trastornos
+                                gástricos y digestivos. Desde la Antigüedad, el jengibre también se considera un
+                                afrodisíaco.</p>
+                            <p>$1.000</p>
+                            <p>
+                                <a
+                                    href="https://www.directoalpaladar.com/ingredientes-y-alimentos/las-mejores-21-recetas-con-jengibre">Jengibre</a>
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="./verduras.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                        </figure>
+                    </div>
+            </li>
+            <li>
+                <div class="product-card">
+                    <img src="./images/tom-paolini-30NSHqWi-JE-unsplash.jpg" alt="papas">
+                    <div class="product-info">
+                        <div>
+                            <p>Los beneficios de la patata son numerosos. Es un alimento rico en carbohidratos, por lo
+                                que nos aporta mucha energía. Además, un 75% de su contenido es agua y es una gran
+                                fuente de potasio. Asimismo, es rica en vitamina C, vitamina B, ácido fólico y minerales
+                                como el magnesio y el hierro</p>
+                            <p>3.000</p>
+                            <p>
+                                <a
+                                    href="https://www.kiwilimon.com/tips/tips-de-cocina/tips-de-platillos/15-recetas-con-papa-que-rinden-para-toda-la-familia">Papas</a>
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                        </figure>
+                    </div>
+            </li>
+        </ul>
+</body>
+
+</html>

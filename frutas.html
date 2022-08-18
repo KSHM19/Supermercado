@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-image: url("https://img.freepik.com/fotos-premium/pasillo-productos-congelados-supermercado_293060-10741.jpg?w=2000");
+            background-position: contain;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .cards-container ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 87vw;
+        }
+
+        .cards-container li {
+            margin: 20px;
+            width: 340px;
+        }
+
+        .cards-container a {
+            text-decoration: none;
+            color: red;
+        }
+
+
+
+        .title {
+            font-size: grid;
+            margin-bottom: 32px;
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+
+        .subtitle {
+            color: var(--black);
+            font-size: var(--lg);
+            font-weight: 700;
+            margin-bottom: 22px;
+            text-align: center;
+
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 380px);
+            gap: 56px;
+            place-content: center;
+            color: var(--black);
+        }
+
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+            transform: translate(150px, -70px);
+            position: absolute;
+            cursor: pointer;
+            margin-bottom: 0px;
+        }
+
+        .product-card img {
+            width: 340px;
+            height: 340px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 2px solid red;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+
+        .navbar-left {
+            display: flex;
+
+        }
+
+        .navbar-left ul {
+            margin-left: 12px;
+        }
+
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+            text-decoration: none;
+            color: var(--black);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+
+        }
+
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+            border: 1px solid red;
+            color: gold;
+
+        }
+
+        .navbar-email {
+            color: gold;
+            font-size: var(--sm);
+            margin-right: 12px;
+        }
+
+        .navbar-shopping-cart {
+            position: relative;
+        }
+
+        .navbar-shopping-cart div {
+            width: 16px;
+            height: 16px;
+            background-color: red;
+            border-radius: 50px;
+            font-size: var(--sm);
+            font-weight: bold;
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+
+        <div class="navbar-left">
+            <img src="./images/3549578.jpg" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="proteina.html">Proteina</a>
+                </li>
+                <li>
+                    <a href="frutas.html">Frutas</a>
+                </li>
+                <li>
+                    <a href="verduras.html">Verduras</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">Stevanherran@gmail.com</li>
+                <li class="navbar-shopping-cart">
+                    <img src="./iconos/icon_shopping_cart.svg" alt="shopping cart">
+                    <div>6</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="title">¡Mi lista de Supermercado!</h1>
+    <section>
+        <h5 class="subtitle">Frutas</h5>
+        <div class="cards-container">
+            <ul>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/pierpaolo-riondato-s7r4xjKXo0s-unsplash (1).jpg" alt="Manzanas">
+                        <div class="product-info">
+                            <div>
+                                <p>Previene el estreñimiento. Su alto contenido en fibra favorece el tránsito intestinal
+                                    y ayuda a la digestión de las grasas.
+                                    Poder antioxidante. Su alto contenido en estos compuestos favorece la regeneración
+                                    celular.
+                                    Mejora el sistema inmune. Su contenido en vitamina C aumenta las defensas de nuestro
+                                    organismo.</p>
+                                <p>$4.000</p>
+                                <p>
+                                    <a
+                                        href="https://www.google.com/search?q=recetas+con+manzanas&tbm=isch&ved=2ahUKEwjL-ovpmZz5AhWPwikDHTspAX8Q2-cCegQIABAA&oq=recetas+con+man&gs_lcp=CgNpbWcQARgCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCAAQsQMQQzoECAAQQzoICAAQgAQQsQNQrZZFWJqsRWCCzkVoA3AAeACAAW2IAe4GkgEDNi4zmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=2tPiYsulJ4-Fp8kPu9KE-Ac&bih=657&biw=1024&rlz=1C1ONGR_esCO1015CO1015">Manzanas</a>
+                                </p>
+                            </div>
+
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/desirae-hayes-vitor-vxtBBfMTMZ0-unsplash (1) (1).jpg" alt="Mango">
+                        <div class="product-info">
+                            <div>
+                                <p>El Mango Tiene Potencia Nutricional
+                                    Una porción de 3/4 de taza de mango contiene un 50% de su ración diaria de vitamina
+                                    C, 8% de su ración diaria de vitamina A, y un 8% de la ración diaria de vitamina B6.
+                                    Estas vitaminas contenidas en el mango pueden ayudar a sustentar el sistema
+                                    inmunológico de su cuerpo</p>
+                                <p>$2.000</p>
+                                <p>
+                                    <a href="https://saborgourmet.com/recetas-con-mango/">Mango</a>
+                                </p>
+                            </div>
+
+                            <figure>
+                                <a href="./Checkout.html"><img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/inha-pauliuchenka-j2qY5wJma88-unsplash (2).jpg" alt="Fresa">
+                        <div class="product-info">
+                            <div>
+                                <p>Las fresas son una buena merienda para perder peso o mantenerlo. Son dulces, por lo
+                                    que pueden ser un buen reemplazo de gallegas o dulces para satisfacer a los golosos,
+                                    también después de la comida o la cena. Cada fresa suele equivaler a cuatro
+                                    calorías. Y además, la gran cantidad de fibra ayuda a retrasar la digestión y regula
+                                    los niveles de azúcar en la sangre.</p>
+                                <p>$3.000</p>
+                                <p>
+                                    <a
+                                        href="https://www.directoalpaladar.com/ingredientes-y-alimentos/siete-recetas-fresas-para-alegrar-tus-postres-productos-temporada">Fresa</a>
+                                </p>
+                            </div>
+
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/nati-melnychuk-KyFEImlFKQY-unsplash (1).jpg" alt="Uvas">
+                        <div class="product-info">
+                            <div>
+                                <p>Reducción del riesgo de coágulos sanguíneos. Reducción del colesterol de
+                                    lipoproteínas de baja densidad (LDL, o «malo») Prevención de daños en los vasos
+                                    sanguíneos del corazón. Ayuda para mantener una presión arterial saludable</p>
+                                <p>$5.000</p>
+                                <p>
+                                    <a
+                                        href="https://www.directoalpaladar.com/ingredientes-y-alimentos/siete-recetas-fresas-para-alegrar-tus-postres-productos-temporada">Uvas</a>
+                                </p>
+                            </div>
+
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/jeremy-yap-ZZU9Wqzpj-M-unsplash.jpg" alt="naranjas">
+                        <div class="product-info">
+                            <div>
+                                <p>La naranja es una fruta rica en fibras, vitamina A, B y C, flavonoides y
+                                    betacarotenos, con propiedades antioxidantes y antiinflamatorias, que ayuda a
+                                    combatir el envejecimiento prematuro, a reducir el colesterol malo, a proteger el
+                                    organismo de enfermedades cardiovasculares y a fortalecer el sistema inmunitario.
+                                    Asimismo, la naranja también posee minerales como potasio y calcio, necesarios para
+                                    regular la presión arterial.</p>
+                                <p>$3.000</p>
+                                <p>
+                                    <a
+                                        href="https://www.sabervivirtv.com/nutricion/recetas/diez-recetas-naranja-todo-tipo-platos_6282">naranjas</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/floh-maier-aFUHu9WNO3Q-unsplash.jpg" alt="sandia">
+                        <div class="product-info">
+                            <div>
+                                <p>La sandía es una de las frutas veraniegas por excelencia. Refresca y es altamente
+                                    hidratante pero, además, cuenta con un gran número de nutrientes muy beneficiosos
+                                    para nuestra salud. Contiene vitamina C, vitamina A, potasio, magnesio, licopeno y
+                                    betacaroteno. En concreto, su cantidad de licopeno y betacaroteno aumenta cuanto más
+                                    madura está la sandía así que es preferible comerla bien madura para aprovechar al
+                                    máximo sus propiedades.</p>
+                                <p>$12.000</p>
+                                <p>
+                                    <a href="https://www.cocinafacil.com.mx/recetas/recetas-con-sandia/">sandia</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/kateryna-moskalova-tFj5BMAwK-Q-unsplash.jpg" alt="mora">
+                        <div class="product-info">
+                            <div>
+                                <p>Es una gran fuente de fibra y de vitamina C
+                                    Y por la presencia de las vitaminas C y A contribuyen a nutrir los huesos, los
+                                    dientes, la piel, la generación de colágeno o la absorción de hierro</p>
+                                <p>$2.000</p>
+                                <p>
+                                    <a href="https://blog.rappi.com/recetas-postres-mora/">mora</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+                <li>
+                    <div class="product-card">
+                        <img src="./images/tijana-drndarski-dFoOWRT97_0-unsplash.jpg" alt="coco">
+                        <div class="product-info">
+                            <div>
+                                <p>Por su constitución el coco es una fruta con propiedades de la vitamina E de
+                                    importante acción antioxidante sobre la piel y es ideal para las personas que se
+                                    encuentran con debilidad. VITAMINAS: C 39 MG.) B1 (0,06 mg), B2(01,8 mg). MINERALES:
+                                    Potasio (398 mg), fósforo (110 mg), calcio (16 mg), hierro (4 mg).</p>
+                                <p>$4.000</p>
+                                <p>
+                                    <a href="https://www.cocinafacil.com.mx/recetas/recetas-coco/">coco</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./Checkout.html"> <img src="./iconos/bt_add_to_cart.svg" alt=""></a>
+                            </figure>
+                        </div>
+                </li>
+            </ul>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Supermercado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-image: url("https://cdn.create.vista.com/api/media/small/200881294/stock-photo-blurred-sauces-buns-rolls-snack");
+            background-position: contain;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            list-style: none;
+            text-align: left;
+            margin: 100px;
+            margin-top: 0px;
+        }
+
+        li {
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+
+
+        .title {
+            font-size: grid;
+            margin-bottom: 12px;
+            text-align: center;
+            color: gold;
+            font-size: 50px;
+        }
+
+        .subtitle {
+            color: var(--black);
+            font-size: var(--lg);
+            font-weight: 700;
+            margin-bottom: 22px;
+
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 230px);
+            gap: 130px;
+            place-content: center;
+            color: var(--black);
+
+        }
+
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+            transform: translateX(110px);
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .product-card img {
+            width: 300px;
+            height: 400px;
+            border-radius: 30px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 20;
+            margin-bottom: 5px;
+        }
+
+        .product-info div p:nth-child(2) {
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 0;
+
+        }
+
+        .primary-button {
+            background-color: salmon;
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 1px solid red;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+
+        .navbar-left {
+            display: flex;
+
+        }
+
+        .navbar-left ul {
+            margin-left: 12px;
+        }
+
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+            text-decoration: none;
+            color: var(--black);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+            border: 1px solid red;
+            color: gold;
+
+        }
+
+        .navbar-email {
+            color: gold;
+            font-size: var(--sm);
+            margin-right: 12px;
+        }
+
+        .navbar-shopping-cart {
+            position: relative;
+        }
+
+        .navbar-shopping-cart div {
+            width: 16px;
+            height: 16px;
+            background-color: red;
+            border-radius: 50px;
+            font-size: var(--sm);
+            font-weight: bold;
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-left">
+            <img src="./images/3549578.jpg" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="proteina.html">Proteina</a>
+                </li>
+                <li>
+                    <a href="frutas.html">Frutas</a>
+                </li>
+                <li>
+                    <a href="verduras.html">Verduras</a>
+                </li>
+                <li>
+                    <a href="Checkout.html">Checkout</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">Stevanherran@gmail.com</li>
+                <li class="navbar-shopping-cart">
+                    <img src="./iconos/icon_shopping_cart.svg" alt="shopping cart">
+                    <div>6</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="title">¡Mi lista de Supermercado!</h1>
+    <section>
+        <div class="cards-container">
+            <ul>
+                <li>
+                    <h5 class="subtitle">Proteina</h5>
+                    <div class="product-card">
+                        <img src="./images/usman-yousaf-eOktYr3tAMo-unsplash (1).jpg" alt="carne de res">
+                        <div class="product-info">
+                            <div>
+                                <p>
+                                    <a
+                                        href="https://www.google.com/search?q=recetas+con+carne&rlz=1C1ONGR_esCO1015CO1015&source=lnms&tbm=isch&s">Carnes</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./proteina.html"> <img src="./iconos/flechita.svg" alt="arrow"></a>
+                            </figure>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h5 class="subtitle">Frutas</h5>
+                    <div class="product-card">
+                        <img src="./images/pierpaolo-riondato-s7r4xjKXo0s-unsplash (1).jpg" alt="Manzanas">
+                        <div class="product-info">
+                            <div>
+
+                                <p>
+                                    <a
+                                        href="https://www.google.com/search?q=recetas+con+manzanas&tbm=isch&ved=2ahUKEwjL-ovpmZz5AhWPwikDHTspAX8Q2-cCegQIABAA&oq=recetas+con+man&gs_lcp=CgNpbWcQARgCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCAAQsQMQQzoECAAQQzoICAAQgAQQsQNQrZZFWJqsRWCCzkVoA3AAeACAAW2IAe4GkgEDNi4zmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=2tPiYsulJ4-Fp8kPu9KE-Ac&bih=657&biw=1024&rlz=1C1ONGR_esCO1015CO1015">Manzanas</a>
+                                </p>
+                            </div>
+
+                            <figure>
+                                <a href="./frutas.html"> <img src="./iconos/flechita.svg" alt="arrow"></a>
+                            </figure>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h5 class="subtitle">Verduras</h5>
+                    <div class="product-card">
+                        <img src="./images/louis-hansel-Iu3oWcTi0a4-unsplash (1).jpg" alt="Zanahoria">
+                        <div class="product-info">
+                            <div>
+
+                                <p>
+                                    <a
+                                        href="https://www.google.com/search?q=recetas+con+zanahoria&tbm=isch&ved=2ahUKEwjP8ZWTnpz5AhWQZ98KHXTuBk4Q2-cCegQIABAA&oq=recetas+con+za&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECAAQQzoGCAAQHhAHOgYIABAeEAg6CAgAEIAEELEDOgsIABCABBCxAxCDAVCxB1iwLWCROWgEcAB4AIABYYgBtAqSAQIxNZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=ZNjiYs-vJpDP_Qb03JvwBA&bih=657&biw=1024&rlz=1C1ONGR_esCO1015CO1015">Zanahoria</a>
+                                </p>
+                            </div>
+                            <figure>
+                                <a href="./verduras.html"><img src="./iconos/flechita.svg" alt="arrow"></a>
+                            </figure>
+                </li>
+            </ul>
+
+    </section>
+    </div>
+    <button class="primary-button 
+arrow-button">
+    </button>
+    </style>
+</body>
+
+</html>
